@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"../../pkg/math"
+	"think.go/task-1/fibonacci/pkg/math"
 )
 
 func main() {
