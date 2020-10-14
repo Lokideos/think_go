@@ -1,4 +1,4 @@
-package math
+package sequencer
 
 // Fibonacci function calculates last fibonacci number in fibonacci sequence given the provided 'max' variable via user input
 // The result have to be less than 'max' variable
