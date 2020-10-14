@@ -1,7 +1,6 @@
 package sequencer
 
-// Fibonacci function calculates last fibonacci number in fibonacci sequence given the provided 'max' variable via user input
-// The result have to be less than 'max' variable
+// Fibonacci function calculates last number in Fibonacci sequence according to user input
 func Fibonacci(lastNumberIndex int) int {
 	sequence := []int{1, 1}
 

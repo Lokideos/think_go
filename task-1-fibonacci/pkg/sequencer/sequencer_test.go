@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-// Fibonacci function calculates number fibonacci according to user inpu
+// Fibonacci function calculates number in Fibonacci sequence according to user input
 func Test_Fibonacci(t *testing.T) {
 	got := Fibonacci(20)
 	want := 6765
