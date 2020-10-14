@@ -3,15 +3,15 @@ package math
 // Fibonacci function calculates last fibonacci number in fibonacci sequence given the provided 'max' variable via user input
 // The result have to be less than 'max' variable
 func Fibonacci(max int) int {
-	fibonacciSequence := []int{1, 1}
+	sequence := []int{1, 1}
 
-	for nextElement(fibonacciSequence) < max {
-		fibonacciSequence = append(fibonacciSequence, nextElement(fibonacciSequence))
+	for nextFibonacciElement(sequence) < max {
+		sequence = append(sequence, nextFibonacciElement(sequence))
 	}
 
-	return fibonacciSequence[len(fibonacciSequence)-1]
+	return sequence[len(sequence)-1]
 }
 
-func nextElement(arr []int) int {
+func nextFibonacciElement(arr []int) int {
 	return (arr[len(arr)-1] + arr[len(arr)-2])
 }
