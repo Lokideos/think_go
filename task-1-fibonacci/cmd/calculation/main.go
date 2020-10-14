@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	max := 20
-	result := sequencer.Fibonacci(max)
+	lastNumberIndex := 20
+	result := sequencer.Fibonacci(lastNumberIndex)
 	fmt.Println(result)
 }
