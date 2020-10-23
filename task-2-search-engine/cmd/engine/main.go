@@ -12,7 +12,7 @@ import (
 
 func main() {
 	// const url = "http://info.cern.ch/"
-	const url = "http://info.cern.chssss/"
+	const url = "http://info.cern.ch/"
 	fmt.Println("Данная программа предназначена для поиска информации на заданном сайте.")
 	fmt.Printf("На данный момент в качестве сайта выбра %s\n", url)
 	fmt.Println("Производится сканирование сайта. Пожалуйста, подождите...")
@@ -50,14 +50,12 @@ func main() {
 
 		if wc == 0 {
 			fmt.Println("Введенное слово не найдено на выбранном сайте.")
+			continue
 		}
 
-		if wc != 0 {
-			fmt.Printf("Введенное слово %s было найдено на следующих страницах сайта %s:\n", text, url)
-
-			for _, k := range keys {
-				fmt.Println(k)
-			}
+		fmt.Printf("Введенное слово %s было найдено на следующих страницах сайта %s:\n", text, url)
+		for _, k := range keys {
+			fmt.Println(k)
 		}
 
 		fmt.Print("\n")
