@@ -33,6 +33,11 @@ func main() {
 		// convert CRLF to LF
 		text = strings.Replace(text, "\n", "", -1)
 
+		if strings.Compare("exit", text) == 0 {
+			fmt.Println("Завершение работы программы...")
+			os.Exit(0)
+		}
+
 		wc := 0
 		keys := []string{}
 
@@ -55,10 +60,6 @@ func main() {
 			}
 		}
 
-		if strings.Compare("exit", text) == 0 {
-			fmt.Println("Завершение работы программы...")
-			os.Exit(0)
-		}
 		fmt.Print("\n")
 	}
 }
