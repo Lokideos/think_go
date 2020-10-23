@@ -11,13 +11,15 @@ import (
 )
 
 func main() {
-	const url = "http://info.cern.ch/"
+	// const url = "http://info.cern.ch/"
+	const url = "http://info.cern.chssss/"
 	fmt.Println("Данная программа предназначена для поиска информации на заданном сайте.")
 	fmt.Printf("На данный момент в качестве сайта выбра %s\n", url)
 	fmt.Println("Производится сканирование сайта. Пожалуйста, подождите...")
 	data, err := spider.Scan(url, 2)
 	if err != nil {
 		log.Printf("ошибка при сканировании сайта %s: %v\n", url, err)
+		return
 	}
 
 	fmt.Println("Сканирование сайта завершено.")
