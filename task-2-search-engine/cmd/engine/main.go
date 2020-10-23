@@ -35,7 +35,7 @@ func main() {
 
 		if strings.Compare("exit", text) == 0 {
 			fmt.Println("Завершение работы программы...")
-			os.Exit(0)
+			return
 		}
 
 		wc := 0
