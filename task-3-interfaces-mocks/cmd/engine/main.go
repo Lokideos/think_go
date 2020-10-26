@@ -19,7 +19,6 @@ func main() {
 	const url = "http://info.cern.ch/"
 	fmt.Println("Данная программа предназначена для поиска информации на заданном сайте.")
 	fmt.Printf("На данный момент в качестве сайта выбра %s\n", url)
-	fmt.Println("Производится сканирование сайта. Пожалуйста, подождите...")
 	crawler := new(spider.Spider)
 	si, err := buildSearchIndex(crawler, url, 2)
 	if err != nil {
